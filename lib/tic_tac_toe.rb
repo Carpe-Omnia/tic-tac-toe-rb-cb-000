@@ -151,10 +151,10 @@ def play(board)
     turn(board)
   end
   if winner(board) == nil
-    puts "It's a draw"
+    puts "Cat's Game!"
   elsif winner(board) == "X"
-    puts "Nice job X player"
+    puts "Congratulations X!"
   else
-    puts "Nice job O player"
+    puts "Congratulations O!"
   end
 end
