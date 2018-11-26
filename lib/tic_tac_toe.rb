@@ -111,13 +111,14 @@ end
 
 def turn(board)
   dex = 0
+  token = current_player(board)
   loop do
     puts "Please enter 1-9:"
     input = gets
     dex = input_to_index(input)
     break if valid_move?(board, dex)
   end
-  move(board, dex)
+  move(board, dex, token)
   display_board(board)
 end
 
@@ -144,7 +145,5 @@ def current_player(board)
 end
 
 def play(board)
-  
-  
-  
-  
+  while over?(board) != true
+    turn(board)
