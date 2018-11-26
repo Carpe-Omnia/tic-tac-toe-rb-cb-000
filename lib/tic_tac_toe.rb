@@ -142,3 +142,9 @@ def current_player(board)
   end
   return player
 end
+
+def play(board)
+  
+  
+  
+  
