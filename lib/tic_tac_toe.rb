@@ -125,7 +125,7 @@ end
 def turn_count(board)
   turn = 0
   board.each do |spot|
-    if spot == " " || spot == "" || spot = nil
+    if spot == " " || spot == "" || spot == nil
       turn += 0
     else
       turn += 1
@@ -155,4 +155,4 @@ def play(board)
   else
     puts "Nice job O player"
   end
-end        
+end
