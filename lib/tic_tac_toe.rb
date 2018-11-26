@@ -147,3 +147,12 @@ end
 def play(board)
   while over?(board) != true
     turn(board)
+  end
+  if winner(board) == nil
+    puts "It's a draw"
+  elsif winner(board) == "X"
+    puts "Nice job X player"
+  else
+    puts "Nice job O player"
+  end
+end        
