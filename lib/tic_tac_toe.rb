@@ -145,7 +145,7 @@ def current_player(board)
 end
 
 def play(board)
-  while over?(board) != true
+  until over?(board) == true
     turn(board)
   end
   if winner(board) == nil
